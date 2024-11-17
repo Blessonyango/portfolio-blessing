@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UV-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Personal Portfolio Website</title>
+       <link rel="stylesheet" href="style.css">
+       <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"><style>
+       html {
+           scroll-behavior: smooth;
+       }
+       
+</style>
+   </head>
+   <body>
+       <div id="header">
+           <div class="container">
+               <nav>
+                   <img src="images/logo2.jpeg" class="logo">
+                   <ul id="sidemenu">
+                       <li><a href="#header">Home</a></li>
+                       <li><a href="#about">About</a></li>
+                       <li><a href="#Services">Services</a></li>
+                       <li><a href="#Portfolio">Portfolio</a></li>
+                       <li><a href="#Contact">Contacts</a></li>
+                       <i class="fas fa-times" onclick="closemenu()"></i>
+                   </ul>
+                   <i class="fas fa-bars" onclick="openmenu()"></i>
+               </nav>
+               <div class="header-text">
+                   <p>UI/UX Designer</p>
+                   <h1><span>Hi I'm<span> Blessing</span><br> Onyango From kenya</span><br></h1>
+               </div>
+           </div>
+       </div>
+       <!-- -------about------- -->
+       <div id="about">
+           <div class="container">
+               <div class="row">
+                   <div class="about-col-1">
+                       <img src="images/blessing3.jpeg">
+                   </div>
+                   <div class="about-col-2">
+                        <h1 class="sub title">About Me</h1>
+                        <p>Hello! I'm Blessing Onyango, a proffesional expert in IT with a passion for Computers.
+                           With a background in Information Communication Technlogy,Technical Skills,Soft Skills,Professional Experience, I specialize in Programming Languages,
+                           Database Management,Operating Systems,Software Development,Project Management . 
+                           My goal is to Lead Projects,Drive Innovation,Contribute to Industry Standards,Build Foundation.</p>
+
+                           <div class="tab-titles">
+                               <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                               <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                               <p class="tab-links" onclick="opentab('education')">Education</p>
+                           </div>
+                           <div class="tab-contents active-tab" id="skills">
+                               <ul>
+                                   <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                   <li><span>Web Development</span><br>Web app Development</li>
+                                   <li><span>App Development</span><br>Building Android/iOS apps</li>
+                               </ul>
+                           </div>
+                           <div class="tab-contents" id="experience">
+                               <ul>
+                                   <li><span>2021 - 2023</span><br>UI/UX Design at Ramogi Institute of Advanced 
+                                   Technology and power learning Project</li>
+                                   <li><span>2021 - 2022</span><br>Team lead at RIAT</li>
+                                   <li><span>2022 - 2022</span><br>attachment at Migori County Offices</li>
+                                </ul>
+                           </div>
+                           <div class="tab-contents" id="education">
+                               <ul>
+                                   <li><span>2021 - 2023</span><br>UI/UX Design at Ramogi Institute of Advanced 
+                                       Technology</li>
+                                   <li><span>2024 - 2024</span><br>Power Learning Project Academy</li>
+                                   <li><span>2024 - 2024</span><br>Google Developers club at Kabarak University</li>    
+                                   <li><span>2022</span><br>Enterprenuership skills from RIAT</li>
+                                   <li><span>2022</span><br>Communication skills from RIAT</li>
+
+                               </ul>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+               
+               
+       <!-- -------services------- -->
+       <div id="Services">
+           <div class="container">
+               <h1 class="sub-title">My Services</h1>
+                   <div class="services-list">
+                       <div>
+                           <i class="fas fa-code"></i>
+                           <h2>Web Design</h2>
+                           <p>My goal as a web designer is to create websites that not only captivate users but also deliver a meaningful experience.
+                              By combining creative design with a user-centered approach, 
+                              I strive to build websites that help businesses achieve their goals and resonate with their audiences.</p>
+                           <a href="#">Learn</a>
+                           </div>
+                           <div>
+                               <i class="fas fa-crop-alt"></i>
+                               <h2>UI/UXDesign</h2>
+                               <p>In UI/UX design, my goal is to create digital experiences that are not only visually appealing but also deeply intuitive and user-centered.
+                                   By combining thoughtful design with user research and testing, 
+                                   I strive to build products that deliver exceptional experiences and meet users’ needs effectively.</p>
+                               <a href="#">Learn</a>
+                           </div>
+                           <div>
+                               <i class="fab fa-app-store"></i>
+                               <h2>App Design</h2>
+                               <p>In app design, my goal is to create engaging and effective applications that provide users with a seamless experience. 
+                                  By combining user research, thoughtful design, and iterative testing, 
+                                  I strive to build apps that not only meet user needs but also deliver exceptional value and satisfaction.</p>
+                               <a href="#">Learn</a>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+       <!-- -------portfolio------- -->
+       <div id="Portfolio">
+           <div class="container">
+               <h1 class="sub-title">My Work</h1>
+                   <div class="work-list">
+                       <div class="work">
+                           <Img src="images/work 1.jpg">
+                               <div class="layer">
+                                   <h3>Social Media App</h3>
+                                   <p>The app connects you to talented people around the world.
+                                       Download it from play store.</p>
+                                       <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                           </div>
+                       </div>
+                   <div class="work">
+                           <Img src="images/work3.jpg">
+                               <div class="layer">
+                                   <h3>Music App</h3>
+                                   <p>The app connects you to talented people around the world.
+                                       Download it from play store.</p>
+                                       <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                   </div>
+                       </div>
+                           <div class="work">
+                               <Img src="images/work2.jpg">
+                                   <div class="layer">
+                                       <h3>Online shopping App</h3>
+                                       <p>The app connects you to talented people around the world.
+                                           Download it from play store.</p>
+                                           <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                               </div>
+                           </div>
+                       </div>
+                   <a href="#" class="btn">See more</a>
+               </div>
+           </div>
+       <!-- -------contact------- -->
+       <div id="Contact">
+           <div class="container">
+               <div class="row">
+                   <div class="Contact-left">
+                       <h1 class="sub-title">Contact Me</h1>
+                       <p><i class="fa-sharp fa-solid fa-phone"></i> 0768654029</p>
+                       <p><i class="fa-solid fa-envelope"></i></i> blessingonyango2001@gmail.com</p>
+                       <div class="fa-solid fa-link">
+                           <a href="https://facebook.com/"><i class=" fab fa-facebook"></i></a>
+                           <a href=""><i class="fa-brands fa-twitter" style="color: #FFD43B;"></i></a>
+                           <a href=""><i class=" fab fa-instagram"></i></a>
+                           <a href=""><i class=" fab fa-linkedin"></i></a>
+                           </div>
+                           <a href="images/BLESSING OKIDI ONYANGO cv.pdf" class="btn btn2">Download CV</a> 
+                       </div>
+                       <div class="Contact-right">
+                           <form name="submit-to-google-sheet">
+                               <input type="text" name="Name" placeholder="Your Name" required>
+                               <input type="email" name="email" placeholder="Your Email" required>
+                               <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                               <button type="submit" class="btn btn2">Submit</button>
+                           </form>
+                           <span id="msg"></span>
+                       </div>
+
+                   </div>
+               </div>
+               <div class="copyright">
+                   <p>Copyright © Blessing. Made by Blessing</p>
+               </div>
+             </div>
+       <script>
+
+               var tablinks = document.getElementsByClassName("tab-links");
+               var tabcontents = document.getElementsByClassName("tab-contents");
+                   
+               function opentab(tabname){
+                   for(tablink of tablinks){
+                        tablink.classList.remove("active-link");
+                   }
+                   for(tabcontent of tabcontents){
+                       tabcontent.classList.remove("active-tab");
+                   }
+                       event.currentTarget.classList.add("active-link");
+                       document.getElementById(tabname).classList.add("active-tab");
+               }
+
+       </script>
+
+       <script>
+           var sidemenu = document.getElementById("sidemenu");
+
+           function openmenu(){
+               sidemenu.style.right = "0";
+           }
+           function closemenu(){
+               sidemenu.style.right = "-200px";
+           }
+
+       </script>
+        <script>
+           const scriptURL = '<https://script.google.com/macros/s/AKfycbz3r2dGFxPCoFBxoJbpxurrsYsXy6hdCfzQkp4Ytca2eag9nqCC7mHmkXeQlvQRagkNEA/exec>'
+           const form = document.forms['submit-to-google-sheet']
+           const msg = document.getElementById("msg")
+           form.addEventListener('submit', e => {
+             e.preventDefault()
+             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+               .then(response => {
+                   msg.innerHTML = "Message sent successfully"
+                   setTimeout(function(){
+                       msg.innerHTML = ""
+                   }5000)
+                   form.reset()
+               }
+               .catch(error => console.error('Error!', error.message))
+           })
+         </script>
+   </body>
+   </html> 
